@@ -1,0 +1,23 @@
+{
+  "name": "@linkurious/eslint-config-ogma",
+  "version": "1.0.2",
+  "description": "ESLint config for Ogma projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint index.js"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.43.0",
+    "eslint": "^8.27.0",
+    "eslint-config-prettier": "^8.9.0",
+    "eslint-plugin-import": "^2.27.5",
+    "prettier": "^2.8.8"
+  },
+  "eslintConfig": {
+    "extends": "./index.js"
+  },
+  "keywords": [],
+  "author": "Linkurious SAS",
+  "license": "Apache-2.0"
+}
