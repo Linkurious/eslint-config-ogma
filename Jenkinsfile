@@ -8,6 +8,7 @@ nodeJob {
   runForwardMerge = false
   createGitTag = true
   runPreReleaseOnUpload = false
+  runDependencyVersionCheck = false
   npmPackPath = '.'
   gitTagPrefix = 'v'
   runBookeeping = true
