@@ -17,6 +17,9 @@
   "eslintConfig": {
     "extends": "./index.js"
   },
+  "files": [
+    "index.js"
+  ],
   "keywords": [],
   "author": "Linkurious SAS",
   "license": "Apache-2.0"
