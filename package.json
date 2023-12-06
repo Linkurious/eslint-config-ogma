@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "postversion": "sync_versions",
+    "test:unit": "echo \"Error: no test specified\"",
     "test": "eslint index.js"
   },
   "dependencies": {
