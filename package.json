@@ -1,6 +1,6 @@
 {
   "name": "@linkurious/eslint-config-ogma",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "ESLint config for Ogma projects",
   "main": "index.js",
   "scripts": {
