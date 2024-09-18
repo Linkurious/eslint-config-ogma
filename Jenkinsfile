@@ -12,5 +12,6 @@ nodeJob {
   npmPackPath = '.'
   gitTagPrefix = 'v'
   runBookeeping = true
+  githubRelease = true
   runNpmPublish = true
 }

@@ -1,6 +1,6 @@
 {
   "name": "@linkurious/eslint-config-ogma",
-  "version": "1.0.12",
+  "version": "1.0.14",
   "description": "ESLint config for Ogma projects",
   "main": "index.js",
   "scripts": {
@@ -14,8 +14,10 @@
     "@typescript-eslint/parser": "7.17.0",
     "eslint": "8.57.0",
     "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-depend": "^0.11.0",
     "eslint-plugin-import": "2.29.1",
     "eslint-plugin-prettier": "5.1.3",
+    "eslint-plugin-promise": "^7.0.0",
     "prettier": "3.3.3"
   },
   "publishConfig": {
