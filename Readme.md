@@ -2,6 +2,10 @@
 
 This package provides Ogma' base JS ESLint configuration.
 
+## Important note
+
+⚠️ Don **not** install your own version of `eslint` if you are using this preset. You will regret it.
+
 ## Installed rules
 
 - Eslint recommended rules
