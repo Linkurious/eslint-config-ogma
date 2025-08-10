@@ -32,6 +32,6 @@
   "author": "Linkurious SAS",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@linkurious/code-tools": "^0.0.14"
+    "@linkurious/code-tools": "^0.0.15"
   }
 }
