@@ -7,7 +7,7 @@ A shareable ESLint 9 flat config for TypeScript projects with opinionated rules 
 - ✨ ESLint 9 flat config format
 - 🔧 TypeScript support with typescript-eslint
 - 📦 Import/export linting with eslint-plugin-import
-- 🤝 Promise best practices with eslint-plugin-promise  
+- 🤝 Promise best practices with eslint-plugin-promise
 - 💅 Prettier integration for code formatting
 - 📋 Organized import ordering rules
 
