@@ -2,7 +2,11 @@
   "name": "@linkurious/eslint-config-ogma",
   "version": "2.0.0",
   "description": "Shareable ESLint 9 flat config for TypeScript projects",
+  "type": "module",
   "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
   "scripts": {
     "postversion": "sync_versions",
     "test:unit": "echo \"Error: no test specified\"",
@@ -10,13 +14,13 @@
     "bump:patch": "npm version patch --no-git-tag-version"
   },
   "dependencies": {
-    "@eslint/js": "^9.0.0",
-    "eslint": "^9.0.0",
-    "typescript-eslint": "^8.0.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-promise": "^7.0.0",
-    "globals": "^15.0.0"
+    "@eslint/js": "^9.34.0",
+    "eslint": "^9.34.0",
+    "typescript-eslint": "^8.42.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-promise": "^7.2.1",
+    "globals": "^16.3.0"
   },
   "peerDependencies": {
     "eslint": "^9.0.0",
@@ -29,7 +33,8 @@
     "extends": "./index.js"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "eslint.config.js"
   ],
   "keywords": [
     "eslint",
@@ -41,6 +46,6 @@
   "author": "Linkurious SAS",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@linkurious/code-tools": "^0.0.14"
+    "@linkurious/code-tools": "^0.0.15"
   }
 }

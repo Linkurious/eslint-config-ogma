@@ -1,10 +1,11 @@
-const js = require("@eslint/js");
-const tseslint = require("typescript-eslint");
-const importPlugin = require("eslint-plugin-import");
-const promisePlugin = require("eslint-plugin-promise");
-const prettierConfig = require("eslint-config-prettier");
+import js from "@eslint/js";
+import prettierConfig from "eslint-config-prettier";
+import importPlugin from "eslint-plugin-import";
+import promisePlugin from "eslint-plugin-promise";
+import globals from "globals";
+import tseslint from "typescript-eslint";
 
-module.exports = [
+export default [
   js.configs.recommended,
   ...tseslint.configs.recommended,
   importPlugin.flatConfigs.recommended,
@@ -12,13 +13,19 @@ module.exports = [
   promisePlugin.configs["flat/recommended"],
   prettierConfig,
   {
+    files: ["**/*.cjs"],
+    rules: {
+      "@typescript-eslint/no-require-imports": "off",
+    },
+  },
+  {
     languageOptions: {
       ecmaVersion: 2021,
       sourceType: "module",
       globals: {
-        ...require("globals").browser,
-        ...require("globals").node,
-        ...require("globals").es2021,
+        ...globals.browser,
+        ...globals.node,
+        ...globals.es2021,
       },
     },
     settings: {
