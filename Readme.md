@@ -24,7 +24,7 @@ npm install --save-dev @linkurious/eslint-config-ogma eslint typescript
 Create an `eslint.config.js` file in your project root:
 
 ```javascript
-import ogmaConfig from '@linkurious/eslint-config-ogma';
+import ogmaConfig from "@linkurious/eslint-config-ogma";
 
 export default ogmaConfig;
 ```
@@ -32,14 +32,14 @@ export default ogmaConfig;
 ### With Custom Overrides
 
 ```javascript
-import ogmaConfig from '@linkurious/eslint-config-ogma';
+import ogmaConfig from "@linkurious/eslint-config-ogma";
 
 export default [
   ...ogmaConfig,
   {
     // Your custom rules
     rules: {
-      'no-console': 'warn', // Override the default 'error'
+      "no-console": "warn", // Override the default 'error'
       // Add your project-specific rules here
     },
   },
@@ -49,14 +49,14 @@ export default [
 ### File-Specific Configuration
 
 ```javascript
-import ogmaConfig from '@linkurious/eslint-config-ogma';
+import ogmaConfig from "@linkurious/eslint-config-ogma";
 
 export default [
   ...ogmaConfig,
   {
-    files: ['**/*.test.ts', '**/*.spec.ts'],
+    files: ["**/*.test.ts", "**/*.spec.ts"],
     rules: {
-      'no-console': 'off', // Allow console in tests
+      "no-console": "off", // Allow console in tests
     },
   },
 ];
@@ -65,17 +65,12 @@ export default [
 ### Ignoring Files
 
 ```javascript
-import ogmaConfig from '@linkurious/eslint-config-ogma';
+import ogmaConfig from "@linkurious/eslint-config-ogma";
 
 export default [
   ...ogmaConfig,
   {
-    ignores: [
-      'dist/**',
-      'build/**',
-      'node_modules/**',
-      '**/*.d.ts',
-    ],
+    ignores: ["dist/**", "build/**", "node_modules/**", "**/*.d.ts"],
   },
 ];
 ```

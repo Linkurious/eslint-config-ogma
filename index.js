@@ -38,6 +38,12 @@ export default [
       "no-console": "error",
       "@typescript-eslint/ban-ts-comment": "warn",
       "@typescript-eslint/no-non-null-assertion": "off",
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        {
+          argsIgnorePattern: "^_",
+        },
+      ],
       "import/order": [
         "warn",
         {
