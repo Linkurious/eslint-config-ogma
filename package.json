@@ -22,7 +22,7 @@
     "eslint-plugin-promise": "7.2.1",
     "globals": "16.3.0",
     "typescript-eslint": "8.42.0",
-    "eslint-formatter-checkstyle": "8.40.0"
+    "eslint-formatter-checkstyle": "9.0.1"
   },
   "peerDependencies": {
     "eslint": "9.35.0",
