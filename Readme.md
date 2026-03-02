@@ -75,17 +75,26 @@ export default [
 ];
 ```
 
-## Package.json Scripts
+## Oxlint Config
 
-Add these scripts to your `package.json`:
+This package also publishes an Oxlint config as the `@linkurious/eslint-config-ogma/oxlint` subpath.
+
+### Option 1: Extend by package name
+
+If your Oxlint version supports package `extends`, add this to your project `.oxlintrc.json`:
 
 ```json
 {
-  "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
-  }
+  "extends": ["@linkurious/eslint-config-ogma/oxlint"]
 }
+```
+
+### Option 2: Use the published file path
+
+Use the file from `node_modules` directly:
+
+```bash
+oxlint --config node_modules/@linkurious/eslint-config-ogma/.oxlintrc.json .
 ```
 
 ## What's Included
@@ -118,6 +127,25 @@ If you're upgrading from v1.x (ESLint 8), you'll need to:
 1. Update to ESLint 9: `npm install --save-dev eslint@^9.0.0`
 2. Convert your `.eslintrc.*` to `eslint.config.js` (flat config format)
 3. Update your config import as shown in the usage examples above
+
+## Contributing
+
+The following scripts are used to develop and test this package:
+
+```json
+{
+  "scripts": {
+    "validate:exports": "node scripts/validate-exports.mjs",
+    "test:unit": "node --test",
+    "test:ci": "mkdir -p reports/unit && node --test --test-reporter=junit --test-reporter-destination=reports/unit/junit-test-results.xml",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "npm run validate:exports && npm run test:unit && npm run lint"
+  }
+}
+```
+
+The `validate:exports` script ensures `@linkurious/eslint-config-ogma/oxlint` remains correctly exported before publishing.
 
 ## License
 

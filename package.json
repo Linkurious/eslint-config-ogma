@@ -1,16 +1,20 @@
 {
   "name": "@linkurious/eslint-config-ogma",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "description": "Shareable ESLint 9 flat config for TypeScript projects",
   "type": "module",
   "main": "index.js",
   "exports": {
-    ".": "./index.js"
+    ".": "./index.js",
+    "./oxlint": "./.oxlintrc.json",
+    "./oxlint.json": "./.oxlintrc.json"
   },
   "scripts": {
+    "validate:exports": "node scripts/validate-exports.mjs",
     "postversion": "sync_versions",
-    "test:unit": "echo \"Error: no test specified\"",
-    "test": "eslint index.js",
+    "test:unit": "mkdir -p reports/unit && node --test --test-reporter=junit --test-reporter-destination=reports/unit/junit-test-results.xml",
+    "lint": "eslint .",
+    "test": "npm run validate:exports && node --test && npm run lint",
     "bump:patch": "npm version patch --no-git-tag-version"
   },
   "dependencies": {
@@ -36,7 +40,8 @@
   },
   "files": [
     "index.js",
-    "eslint.config.js"
+    "eslint.config.js",
+    ".oxlintrc.json"
   ],
   "keywords": [
     "eslint",
