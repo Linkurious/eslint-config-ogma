@@ -12,10 +12,9 @@
   "scripts": {
     "validate:exports": "node scripts/validate-exports.mjs",
     "postversion": "sync_versions",
-    "test:unit": "node --test",
-    "test:ci": "mkdir -p reports/unit && node --test --test-reporter=junit --test-reporter-destination=reports/unit/junit-test-results.xml",
+    "test:unit": "mkdir -p reports/unit && node --test --test-reporter=junit --test-reporter-destination=reports/unit/junit-test-results.xml",
     "lint": "eslint .",
-    "test": "npm run validate:exports && npm run test:unit && npm run lint",
+    "test": "npm run validate:exports && node --test && npm run lint",
     "bump:patch": "npm version patch --no-git-tag-version"
   },
   "dependencies": {
