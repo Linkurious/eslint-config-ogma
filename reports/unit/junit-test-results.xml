@@ -1,9 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="vitest tests" tests="1" failures="0" errors="0" time="1">
-	<testsuite name="test/dummy" timestamp="2023-12-06T14:51:34.004Z" hostname="CI" tests="1" failures="0" errors="0" skipped="0" time="1">
-		<testcase classname="test/dummy" name="Dummy name" time="0.5">
-		</testcase>
-		<testcase classname="test/dummy" name="Dummy name" time="0.5">
-		</testcase>
-	</testsuite>
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+	<testcase name="eslint config exports a non-empty flat config array" time="0.587680" classname="test"/>
+	<testcase name="oxlint config is valid json with expected top-level fields" time="0.001645" classname="test"/>
+	<testcase name="package subpath @linkurious/eslint-config-ogma/oxlint resolves" time="0.000334" classname="test"/>
+	<!-- tests 3 -->
+	<!-- suites 0 -->
+	<!-- pass 3 -->
+	<!-- fail 0 -->
+	<!-- cancelled 0 -->
+	<!-- skipped 0 -->
+	<!-- todo 0 -->
+	<!-- duration_ms 643.130625 -->
 </testsuites>
