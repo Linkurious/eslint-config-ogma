@@ -7,7 +7,9 @@
   "exports": {
     ".": "./index.js",
     "./oxlint": "./.oxlintrc.json",
-    "./oxlint.json": "./.oxlintrc.json"
+    "./oxlint.json": "./.oxlintrc.json",
+    "./oxfmt": "./.oxfmtrc.json",
+    "./oxfmt.json": "./.oxfmtrc.json"
   },
   "scripts": {
     "validate:exports": "node scripts/validate-exports.mjs",
@@ -21,12 +23,14 @@
     "@eslint/js": "9.35.0",
     "eslint": "9.35.0",
     "eslint-config-prettier": "10.1.8",
+    "eslint-formatter-checkstyle": "8.40.0",
     "eslint-import-resolver-typescript": "4.4.4",
     "eslint-plugin-import": "2.32.0",
     "eslint-plugin-promise": "7.2.1",
     "globals": "16.3.0",
-    "typescript-eslint": "8.42.0",
-    "eslint-formatter-checkstyle": "8.40.0"
+    "oxfmt": "0.70.0",
+    "oxlint": "1.85.0",
+    "typescript-eslint": "8.42.0"
   },
   "peerDependencies": {
     "eslint": "9.35.0",
@@ -41,7 +45,8 @@
   "files": [
     "index.js",
     "eslint.config.js",
-    ".oxlintrc.json"
+    ".oxlintrc.json",
+    ".oxfmtrc.json"
   ],
   "keywords": [
     "eslint",
