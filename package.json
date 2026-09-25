@@ -13,6 +13,7 @@
     "validate:exports": "node scripts/validate-exports.mjs",
     "postversion": "sync_versions",
     "test": "npm run validate:exports",
+    "test:unit": "npm run test",
     "bump:patch": "npm version patch --no-git-tag-version"
   },
   "dependencies": {
