@@ -12,8 +12,8 @@
   "scripts": {
     "validate:exports": "node scripts/validate-exports.mjs",
     "postversion": "sync_versions",
-    "test": "npm run validate:exports",
-    "test:unit": "npm run test",
+    "test": "npm run validate:exports && node --test",
+    "test:unit": "npm run validate:exports && mkdir -p reports/unit && node --test --test-reporter=junit --test-reporter-destination=reports/unit/junit-test-results.xml",
     "bump:patch": "npm version patch --no-git-tag-version"
   },
   "dependencies": {
